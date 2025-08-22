@@ -74,7 +74,8 @@ const Navbar = ({ activeSection, setActiveSection }: NavbarProps) => {
               </div>
 
               {/* Contact Info */}
-              <div className="flex items-center space-x-6 lg:space-x-6 xl:space-x-10 px-17">
+              {/* <div className="flex items-center space-x-6 lg:space-x-6 xl:space-x-10 px-17"> */}
+              <div className="flex items-center space-x-2 sm:space-x-4 lg:space-x-6 xl:space-x-10 px-2 sm:px-4">
                 {/* Phone */}
                 <div className="flex items-center space-x-2 lg:space-x-3">
                   <div className="w-8 h-8 lg:w-9 lg:h-9 bg-transparent rounded-full flex items-center justify-center border-[2px] border-blue-500">
@@ -101,14 +102,19 @@ const Navbar = ({ activeSection, setActiveSection }: NavbarProps) => {
                   </div>
                   <div className="flex flex-col">
                     <span className="text-xs lg:text-sm text-black">Visit Us :</span>
-                    <span className="text-xs lg:text-sm xl:text-base font-bold text-blue-500" style={{ fontFamily: 'Mozilla Text, sans-serif' }}>
+                    {/* <span className="text-xs lg:text-sm xl:text-base font-bold text-blue-500" style={{ fontFamily: 'Mozilla Text, sans-serif' }}>
                       House no 2, Main Service <br className="hidden lg:block" /> road, G 16/9, Islamabad
-                    </span>
+                    </span> */}
+                    <span className="text-xs lg:text-sm xl:text-base font-bold text-blue-500 break-words" style={{ fontFamily: 'Mozilla Text, sans-serif' }}>
+  House no 2, Main Service <br className="hidden lg:block" /> road, G 16/9, Islamabad
+</span>
                   </div>
                 </div>
 
                 {/* Contact Button */}
-                <button className="bg-yellow-500 hover:bg-blue-800 hover:text-white text-black px-3 py-2 lg:px-5 lg:py-2.5 xl:px-7 xl:py-3 text-sm lg:text-base xl:text-lg font-medium transition-colors duration-200 shadow-sm hover:shadow-md -mr-8">
+                
+                <button className="bg-yellow-500 hover:bg-blue-800 hover:text-white text-black px-3 py-2 lg:px-5 lg:py-2.5 xl:px-7 xl:py-3 text-sm lg:text-base xl:text-lg font-medium transition-colors duration-200 shadow-sm hover:shadow-md">
+                {/* <button className="bg-yellow-500 hover:bg-blue-800 hover:text-white text-black px-3 py-2 lg:px-5 lg:py-2.5 xl:px-7 xl:py-3 text-sm lg:text-base xl:text-lg font-medium transition-colors duration-200 shadow-sm hover:shadow-md -mr-8"> */}
                   Contact Us
                 </button>
               </div>
